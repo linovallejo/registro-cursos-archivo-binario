@@ -4,12 +4,15 @@
 ### Sistema de Registro de Cursos en Archivo Binario
 
 #### Introducción
-Esta pequeña aplicación permite el registro y visualización de cursos. Se utiliza un archivo binario para persistir la información.
+Esta pequeña aplicación permite el registro y visualización de cursos. Se utiliza un archivo binario para persistir la información. Si el archivo binario no existe al momento de ingresar por primera vez, el mismo es creado, de lo contrario se utiliza el archivo binario existente. La información en el archivo binario es persistida cuando el usuario decide salir de la aplicación. 
 
 #### Funciones Principales
 - **Registro de Curso** 
 
     ![alt text](images/image-1.png)
+
+    Las siguientes validaciones son realizadas:
+    ![alt text](images/image-2.png)
 
 - **Ver Cursos**
 ![alt text](images/image.png)
