@@ -31,6 +31,8 @@ func main() {
 
 	for !salir {
 		limpiarConsola()
+		PrintCopyright()
+
 		fmt.Println("1. Registro de Curso")
 		fmt.Println("2. Ver Cursos")
 		fmt.Println("3. Salir")
@@ -44,6 +46,7 @@ func main() {
 			salir = true
 		}
 	}
+
 }
 
 func validarObligatorio(input string) bool {
@@ -65,6 +68,8 @@ func validarNombre(input string) bool {
 
 func RegistroCurso() {
 	reader := bufio.NewReader(os.Stdin)
+
+	PrintCopyright()
 
 	lineaDoble(30)
 	fmt.Println("Registro de Curso")
@@ -141,6 +146,10 @@ func RegistroCurso() {
 		fmt.Println("Error registrando el nuevo curso:", err)
 		return
 	}
+
+	mostrarMensaje("Curso registrado exitosamente.")
+
+	Pausa()
 }
 
 func CrearArchivo(nombre string) error {
@@ -205,6 +214,9 @@ func ProximoId() int32 {
 }
 
 func VerCursos() {
+
+	PrintCopyright()
+
 	lineaDoble(60)
 	fmt.Println("Cursos Registrados")
 	lineaDoble(60)
@@ -236,6 +248,7 @@ func VerCursos() {
 	}
 
 	if len(cursos) == 0 {
+		lineaEnBlanco()
 		fmt.Println("No hay cursos registrados.")
 		Pausa()
 		return
@@ -302,4 +315,11 @@ func lineaDoble(longitud int) {
 
 func limpiarConsola() {
 	fmt.Print("\033[H\033[2J")
+}
+
+func PrintCopyright() {
+	lineaDoble(60)
+	fmt.Println("Lino Antonio Garcia Vallejo")
+	fmt.Println("Carné: 9017323")
+	lineaDoble(60)
 }
