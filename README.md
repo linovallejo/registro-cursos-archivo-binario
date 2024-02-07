@@ -14,7 +14,8 @@ Esta pequeña aplicación permite el registro y visualización de cursos. Se uti
     Las siguientes validaciones son realizadas:
     ![alt text](images/image-2.png)
 
-- **Ver Cursos**
+- **Ver Cursos**  
+
     ![alt text](images/image.png)
 
 ## Requerimientos del Entorno de Desarrollo 🔧
