@@ -15,7 +15,7 @@ Esta pequeña aplicación permite el registro y visualización de cursos. Se uti
     ![alt text](images/image-2.png)
 
 - **Ver Cursos**
-![alt text](images/image.png)
+    ![alt text](images/image.png)
 
 ## Requerimientos del Entorno de Desarrollo 🔧
 * **Lenguaje de programación**: GO 1.22.0
